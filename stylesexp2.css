@@ -1,0 +1,38 @@
+/* Base styles for the container */
+.container {
+    max-width: 800px; /* Limit the width of the container */
+    margin: auto; /* Center the container */
+    padding: 20px; /* Add padding */
+    border: 1px solid #ccc; /* Optional border for clarity */
+    display: inline-block; /* Ensure the container defines its width */
+    overflow: auto; /* Contain floated elements */
+}
+
+/* Base styles for images */
+.image-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of images */
+    gap: 10px; /* Space between images */
+}
+
+/* Container query for small screens */
+@container (min-width: 400px) {
+    .responsive-image {
+        width: calc(50% - 10px); /* Two images per row, accounting for gap */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+/* Container query for medium screens */
+@container (min-width: 600px) {
+    .responsive-image {
+        width: calc(33.33% - 10px); /* Three images per row */
+    }
+}
+
+/* Container query for large screens */
+@container (min-width: 800px) {
+    .responsive-image {
+        width: calc(25% - 10px); /* Four images per row */
+    }
+}

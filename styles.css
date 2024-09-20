@@ -36,6 +36,7 @@ body {
     }
 }
 
+/* Media query for tablet screens (600px to 899px) */
 @media (max-width: 899px) {
     /* Styles for tablet */
     .title {
