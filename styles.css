@@ -23,28 +23,41 @@ body {
 
 /* Exp1: Step 2 */
 
-/* Media query for tablet screens */
-@media (min-width: 600px) {
-    .title {
-        font-size: 30px; /* Increase font size for tablets */
-    }
-
-    .content {
-        font-size: 18px; /* Increase content font size for tablets */
-    }
-}
-
-/* Media query for desktop screens */
+/* Media query for desktop screens (900px and up) */
 @media (min-width: 900px) {
+    /* Styles for desktop */
     .title {
-        font-size: 36px; /* Increase font size for desktops */
+        font-size: 36px; /* Ensure font size is set for desktops */
+        text-align: center; /* Center the title text */
     }
 
     .content {
-        font-size: 20px; /* Increase content font size for desktops */
+        font-size: 20px; /* Ensure content font size is set for desktops */
     }
 }
 
+@media (max-width: 899px) {
+    /* Styles for tablet */
+    .title {
+        font-size: 30px; /* Decrease font size for tablets */
+    }
+
+    .content {
+        font-size: 18px; /* Decrease content font size for tablets */
+    }
+}
+
+/* Media query for mobile devices (up to 599px) */
+@media (max-width: 599px) {
+    /* Styles for mobile */
+    .title {
+        font-size: 24px; /* Further decrease font size for mobile */
+    }
+
+    .content {
+        font-size: 16px; /* Further decrease content font size for mobile */
+    }
+}
 
 /* Exp1: Step 3 */
 
