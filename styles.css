@@ -1,0 +1,56 @@
+/* Exp1: Step 1 */
+
+/* Base styles for the body */
+body {
+    font-family: Arial, sans-serif; /* Set the font family */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding for better spacing */
+    background-color: #f4f4f4; /* Set a light grey background color */
+}
+
+/* Styles for the title */
+.title {
+    text-align: center; /* Center the title text */
+    font-size: 24px; /* Set font size for mobile view */
+    color: #333; /* Set a dark grey color for the text */
+}
+
+/* Styles for the content paragraph */
+.content {
+    font-size: 16px; /* Set font size for the content */
+    color: #555; /* Set a medium grey color for the text */
+}
+
+/* Exp1: Step 2 */
+
+/* Media query for tablet screens */
+@media (min-width: 600px) {
+    .title {
+        font-size: 30px; /* Increase font size for tablets */
+    }
+
+    .content {
+        font-size: 18px; /* Increase content font size for tablets */
+    }
+}
+
+/* Media query for desktop screens */
+@media (min-width: 900px) {
+    .title {
+        font-size: 36px; /* Increase font size for desktops */
+    }
+
+    .content {
+        font-size: 20px; /* Increase content font size for desktops */
+    }
+}
+
+
+/* Exp1: Step 3 */
+
+/* Media query for landscape orientation */
+@media (orientation: landscape) {
+    .title {
+        text-align: right; /* Right-align title text in landscape mode */
+    }
+}
